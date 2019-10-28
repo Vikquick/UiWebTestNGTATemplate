@@ -1,15 +1,10 @@
 package stepdefs;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.WebDriverRunner;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.qameta.allure.Allure;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.testng.asserts.Assertion;
 import pages.BBCNewsHomepage;
 import pages.LocalWeatherpage;
 import utilities.AttachmentsUtils;

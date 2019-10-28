@@ -15,10 +15,10 @@ public class SelenoidWebDriverProvider implements WebDriverProvider {
     public WebDriver createDriver(DesiredCapabilities capabilities) {
         DesiredCapabilities browser = new DesiredCapabilities();
         browser.setBrowserName("chrome");
-        browser.setVersion("76.0");
+        browser.setVersion("77.0");
         browser.setCapability("enableVNC", true);
         browser.setCapability("timeZone", "Europe/Moscow");
-
+        browser.setCapability("headless", true);
         try {
             RemoteWebDriver driver = new RemoteWebDriver(
                     new URL("http://localhost:4444/wd/hub/"), browser);

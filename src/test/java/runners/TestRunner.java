@@ -2,8 +2,6 @@ package runners;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import io.cucumber.core.api.Scenario;
-import io.cucumber.java.AfterStep;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -14,7 +12,7 @@ import utilities.SelenoidWebDriverProvider;
 
 @CucumberOptions(features = "src/test/resources/features", glue = "stepdefs")
 public class TestRunner extends AbstractTestNGCucumberTests {
-    private AttachmentsUtils attachmentsUtils = new AttachmentsUtils();
+    // private AttachmentsUtils attachmentsUtils = new AttachmentsUtils();
 
     @BeforeClass
     public static void setupTimeout() {
@@ -29,11 +27,12 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(false));
     }
 
+   /*
     @AfterStep
     public void afterStep(Scenario scenario) {
         if (scenario.isFailed()) {
             attachmentsUtils.makeScreenShot();
         }
     }
-
+   */
 }
