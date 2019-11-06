@@ -1,4 +1,4 @@
-# UiWebTATemplate
+# UiWebTestNGTATemplate
 ## Базовый проект для UI Web тестирования (JAVA 1.8)
 ### Фреймворки:
 1) TestNG
