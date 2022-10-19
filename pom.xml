@@ -14,7 +14,7 @@
         <allure-testng.version>2.9.0</allure-testng.version>
         <allure-cucumber4-jvm.version>2.12.1</allure-cucumber4-jvm.version>
         <allure-selenide.version>2.12.1</allure-selenide.version>
-        <jackson.version>2.10.0</jackson.version>
+        <jackson.version>2.13.4.1</jackson.version>
     </properties>
 
     <dependencies>
